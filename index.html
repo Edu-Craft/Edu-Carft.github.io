@@ -59,18 +59,22 @@
                 <div class="wrapper">
                   <div class="blurb">
                     <h2><strong>Say</strong> Hello</h2>
-                    <p> </p>
-                  <form>
-                    <input type="email" placeholder="Your Email">
-                    <input type="text" placeholder="Subject">
-                    <textarea placeholder="Message"></textarea>
-                    <input type="submit" value="Send Message">
-                  </form>
+                    &nbsp;
+                  <form onsubmit="return contact()">
+                          <input type="email" id="_Email" class="box" placeholder="Email" name="Email" required> 
+                          <input type="text" id="_Subject" class="box" placeholder="Subject"  name="Subject" required>
+                          <textarea type="text" id="_Message" placeholder="Message" required></textarea>
+                          <button type="submit" class="btn" value="submit"><i class="fas fa-paper-plane">Send</i></button>                                   
+                  </form>  
                 </div>
       </section>
     </main>
+
+    <!-- custom js file link  -->
+    <script src="contact.js"></script> 
+
     <!-- Footer Section -->
-    <footer align="center">
+    <footer class="overlay" align="center">
         <p>&copy; 2024 EduCraft. All rights reserved.</p>
     </footer>
 
