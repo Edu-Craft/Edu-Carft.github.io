@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details Form</title>
+    <style>
+        body {
+            font-family:"Raleway",Helvetica,sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        h1 {
+            margin-top: 80px; /* Adjust the margin-top as needed */
+        }
+
+        form {
+            background: linear-gradient(135deg,  #d8fd04a1 30%, #08fd086b 70%);
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 20px; /* Adjust the margin-top as needed */
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            color: rgb(7, 7, 7);
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #6d6d6d;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Tell us more about you.</h1>
+    <form id="studentForm">
+        <form id="studentForm">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+    
+            <label for="age">Age:</label>
+            <input type="age" id="age" name="Age" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="education">Education:</label>
+            <input type="text" id="education" name="education" required>
+
+            <label for="skills">Skills:</label>
+            <input type="text" id="skills" name="skills" required>
+
+            <label for="interests">Interests:</label>
+            <input type="text" id="interests" name="interests" required>
+    
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" required>
+    
+            <label for="fplans">Future Plan:</label>
+            <input type="text" id="Fplan" name="fplan" required>
+
+            <p>NOTE:Some fields can have multiple values use comma as separator</p>
+
+            <button type="submit">SUBMIT</button>
+        </form>
+    </form>
+</body>
+
+</html>
