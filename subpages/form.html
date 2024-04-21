@@ -12,7 +12,7 @@
     <div class="container">
         <div class="form-container">
             <h5 align="center">Tell us about yourself.</h5>
-            <form action="#" method="post">
+            <form onsubmit="return connect()">
                 <div class="form-group">
                     <div class="row">
                         <label for="name" class="col">Name:</label>
@@ -81,11 +81,9 @@
                 </div>  
             </div>
         </div>    
-        </form>
         <div class="container">
             <div class="form-container">
-                <h5 align="center">OTHER DETAILS</h5>
-                <form action="#" method="post">
+                <h5 align="center">Other Details</h5>
                     <div class="column">
                         <div class="form-group">
                             <label for="gender">Gender:</label>
@@ -97,23 +95,23 @@
                         </div>
                         <div class="form-group">
                             <label for="Country">Country</label>
-                            <input type="country" id="Country" name="Country" required>
+                            <input type="country" id="country" name="country" required>
                         </div>
                     </div>
                     &nbsp;
                     <h5 align="center">Language preferred</h5>
                     <div class="column">
                         <div class="form-group">
-                            <label for="l1">Language1:</label>
-                            <input type="text" id="l1" name="l1"  required>
+                            <label for="language1">Language1:</label>
+                            <input type="text" id="language1" name="language1"  required>
                         </div>
                         <div class="form-group">
-                            <label for="l2">Language2:</label>
-                            <input type="text" id="l2" name="l2"  >
+                            <label for="language2">Language2:</label>
+                            <input type="text" id="language2" name="language2"  >
                         </div>
                         <div class="form-group">
-                            <label for="l3">Language3:</label>
-                            <input type="text" id="l3" name="l3">
+                            <label for="language3">Language3:</label>
+                            <input type="text" id="language3" name="language3">
                         </div>
                     </div>
             </div>
@@ -137,12 +135,13 @@
                     &nbsp;  
                     <h5 align="center">Any Personal feedback</h5>
                     <div class="column">    
-                        <textarea type="text" id="feedback" placeholder="feedback" cols="83" rows="10" required></textarea>
+                        <textarea type="text" id="feedback" placeholder="Anything you wanna share with us." cols="83" rows="10" required></textarea>
                     </div>  
-                    <button class="button">Submit</button>
+                    <button class="button" type="submit" value="submit">Submit</button>
                 </div>
-            </div>    
-            </form> 
+            </div>   
+        </form>      
     </div>
+    <script src="connect.js"></script>   
 </body>
 </html>
