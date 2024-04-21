@@ -35,10 +35,10 @@ var ready = function () {
 
     UFeedback = document.getElementById("feedback").value;
 
-    message ="\nName: " + UName + "\nL.Name:" + ULname + "\nEmail:" + UEmail + "\n10th:" + U10th + "\n12th:" + U12th + "\nGraduation:" + UGraduation
-    "\nSubject1:" + USubject1 + "\nSubject2:" + USubject2 + "\nSubject3:" + USubject3 + "\nHobby1" + UHobby1 + "\nHobby2" + UHobby2  + "\nHobby3" + UHobby3
-    "\nGender:" + UGender + "\nAge:" + UAge + "\nCountry:" + UCountry + "\nLanguage1:" + ULanguage1 + "\nLanguage2:" + ULanguage2 + "\nLanguage3:" + ULanguage3
-    "\nObjective1:" + UObjective1 + "\nObjective2:" + UObjective2 + "\nObjective3:" + UObjective3 + "\nFeedback:" + UFeedback;
+    message = "\nName: " + UName + "\nL.Name:" + ULname + "\nEmail:" + UEmail + "\n10th:" + U10th + "\n12th:" + U12th + "\nGraduation:" + UGraduation +
+    "\nSubject1:" + USubject1 + "\nSubject2:" + USubject2 + "\nSubject3:" + USubject3 + "\nHobby1" + UHobby1 + "\nHobby2" + UHobby2  + "\nHobby3" + UHobby3 +
+    "\nGender:" + UGender + "\nAge:" + UAge + "\nCountry:" + UCountry + "\nLanguage1:" + ULanguage1 + "\nLanguage2:" + ULanguage2 + "\nLanguage3:" + ULanguage3 +
+    "\nObjective1:" + UObjective1 + "\nObjective2:" + UObjective2 + "\nObjective3:" + UObjective3 + "\nFeedback:" + UFeedback;    
 };
 var connect = function () {
     ready();
