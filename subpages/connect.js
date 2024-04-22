@@ -35,7 +35,7 @@ var ready = function () {
 
     UFeedback = document.getElementById("feedback").value;
 
-    message = "\nName : " + UName + "\nL.Name : " + ULname + "\nEmail : " + UEmail + "\n10th : " + U10th + "\n12th : " + U12th + "\nGraduation : " + UGraduation +
+    message = "\nName : " + UName + "\nL.Name : " + ULname + "\nEmail : " + UEmail + "\nPhone : " + UPhone + "\n10th : " + U10th + "\n12th : " + U12th + "\nGraduation : " + UGraduation +
     "\nSubject 1 : " + USubject1 + "\nSubject 2 : " + USubject2 + "\nSubject 3 : " + USubject3 + "\nHobby 1 : " + UHobby1 + "\nHobby 2 : " + UHobby2  + "\nHobby 3 : " + UHobby3 +
     "\nGender : " + UGender + "\nAge : " + UAge + "\nCountry : " + UCountry + "\nLanguage 1 : " + ULanguage1 + "\nLanguage 2 : " + ULanguage2 + "\nLanguage 3 : " + ULanguage3 +
     "\nObjective 1 : " + UObjective1 + "\nObjective 2 : " + UObjective2 + "\nObjective 3 : " + UObjective3 + "\nFeedback : " + UFeedback;    
