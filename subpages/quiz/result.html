@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #remarks {
+            color: ${remarkColor};
+}
+    </style>
+</head>
+<body>
+    <h2>Result</h2>
+    <p id="remarks"></p>
+    <p>Grade Percentage: <span id="grade-percentage"></span></p>
+    <p>Wrong Answers: <span id="wrong-answers"></span></p>
+    <p>Right Answers: <span id="right-answers"></span></p>
+
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[\]]/g, "\\$&");
+            const regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)");
+            const results = regex.exec(window.location.href);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        // Retrieve data from URL parameters and display them
+        document.getElementById('remarks').textContent = getUrlParameter('remarks');
+        document.getElementById('grade-percentage').textContent = getUrlParameter('grade');
+        document.getElementById('wrong-answers').textContent = getUrlParameter('wrongAnswers');
+        document.getElementById('right-answers').textContent = getUrlParameter('rightAnswers');
+    </script>
+</body>
+</html>
